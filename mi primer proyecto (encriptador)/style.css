@@ -1,0 +1,94 @@
+body {
+    height: auto;
+    background-image: url("asset/dark-fantasy-low-res.jpg");
+    background-repeat: no-repeat;
+}
+
+/* Contenedor principal */
+/* Header styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Add padding to the top and bottom only */
+    background-color: #33333328;
+    color: #ffffff3d;
+  }
+  
+  /* Main content styles */
+  main {
+    text-align: center;
+    margin-top: 40px; /* Add margin-top to create space below the header */
+  }
+  
+  .conteiner {
+    width: 80%;
+    background-color: #ffffff28;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-left: 9%;
+  }
+  
+
+
+  
+
+  /* Title styles */
+  .titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  /* Text area styles */
+  .textarea, .mensaje {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+
+  /* Button styles */
+  .boton, .copiar {
+    background-color: #4CAF50; /* Green button color */
+    color: #fff; /* White button text color */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* Add some padding for better interaction */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Indicate clickable behavior */
+    font-size: 16px; /* Set button text size */
+    margin: 10px 0; /* Add some margin for spacing */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  }
+
+  .boton:hover, .copiar:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+
+  /* Message box styles */
+  .mensaje-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .mensaje {
+    flex: 1;
+  }
+
+  .copiar {
+    flex: 0 0 auto;
+  }
+
+  /* Image styles */
+  img {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+  }

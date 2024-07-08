@@ -1,0 +1,76 @@
+<!-- Las "llaves" de encriptación que utilizaremos son las siguientes:
+
+La letra "e" es convertida para "enter"
+La letra "i" es convertida para "imes"
+La letra "a" es convertida para "ai"
+La letra "o" es convertida para "ober"
+La letra "u" es convertida para "ufat"
+
+Requisitos:
+
+Debe funcionar solo con letras minúsculas
+No deben ser utilizados letras con acentos ni caracteres especiales
+Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+Por ejemplo:
+"gato" => "gaitober"
+gaitober" => "gato"
+
+La página debe tener campos para
+inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
+El resultado debe ser mostrado en la pantalla.
+Extras:
+
+Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú
+ de las aplicaciones. -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Daniel Ariza">
+	<meta name="descripcion" content="Pagina de encriptación , juego, mensaje secreto">
+	<meta name="keywords" content="juego, secreto, encriptación, amigos">
+	<link rel="stylesheet" href="style.css">
+	<title>Encriptador</title>
+</head>
+
+<body>
+	<!-- logo -->
+	<header>
+		<img class="logo" src="asset/Vectorlogo.png" alt="Logo de alura">
+	</header>
+
+	<!-- pagina principal -->
+	<main class="conteiner">
+
+		<section>
+
+			<h1 class="titulo">Bienvenido al juego del Encriptador</h1>
+
+			<textarea class="textarea" cols="45" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+			<button class="boton" id="textoEncriptado" onclick="encriptarTexto()">
+				Encriptar
+			</button>
+			<button class="boton" id="textoDesencriptar" onclick="desencriptarTexto()">
+				Desencriptar
+			</button>
+
+		</section>
+
+		<section class="mensaje-box">
+
+			<textarea class="mensaje" cols="35" rows="7" style="background-image: none;"></textarea>
+			<img src="asset/Muñeco.png">
+
+			<button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
+
+		</section>
+	</main>
+<script src="script.js"></script>
+</body>
+
+</html>
